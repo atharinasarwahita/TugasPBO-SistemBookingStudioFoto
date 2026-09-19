@@ -1,9 +1,0 @@
-models\PaketStudio.class
-service\ValidasiInput.class
-models\PaketOutdoor.class
-service\BookingService.class
-models\Jadwal.class
-models\PaketFoto.class
-models\Customer.class
-models\Booking.class
-main\Main.class

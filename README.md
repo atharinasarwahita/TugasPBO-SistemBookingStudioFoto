@@ -52,10 +52,12 @@ Kelas `PaketStudio` dan `PaketOutdoor` bertindak sebagai subclass yang diturunka
 
 - `PaketStudio extends PaketFoto`: Mewarisi atribut dasar `PaketFoto`, namun menambahkan variabel spesifik `kapasitasOrang` serta mengubah logika method `hitungTotalHarga()` untuk mengalkulasi biaya ekstra jika kapasitas melebihi 5 orang.
 
-  <img width="590" height="135" alt="image" src="https://github.com/user-attachments/assets/b13d6015-6856-4b43-81cc-e3e21610a927" />
+  <img width="599" height="129" alt="image" src="https://github.com/user-attachments/assets/c5cd057f-0660-48d0-ac7b-59f94033557c" />
 
 
 - `PaketOutdoor extends PaketFoto`: Mewarisi atribut dasar `PaketFoto`, namun menambahkan variabel spesifik `biayaLokasi` serta mengubah logika method `hitungTotalHarga()` untuk menambahkan biaya izin lokasi ke total harga dasar.
+
+  <img width="590" height="135" alt="image" src="https://github.com/user-attachments/assets/b13d6015-6856-4b43-81cc-e3e21610a927" />
 
 Melalui struktur inheritance ini, variabel umum seperti namaPaket dan harga tidak perlu ditulis ulang di tiap subclass, sehingga kode jadi lebih bersih, terstruktur, dan terhindar dari duplikasi.  
 

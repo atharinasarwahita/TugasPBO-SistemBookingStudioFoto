@@ -17,7 +17,7 @@ public class PaketFoto {
         return namaPaket; 
     }
     
-    public double getHarga(){
+    public int getHarga(){
         return harga;
     }
     

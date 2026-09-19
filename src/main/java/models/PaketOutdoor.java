@@ -12,7 +12,7 @@ public class PaketOutdoor extends PaketFoto {
         this.biayaLokasi = biayaLokasi;
     }
 
-    public double getBiayaLokasi(){
+    public int getBiayaLokasi(){
         return biayaLokasi; 
     }
     

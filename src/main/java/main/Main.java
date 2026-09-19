@@ -48,8 +48,8 @@ public class Main {
 
                     System.out.println("\n--- DATA PEMBOOKING ---");
                     String nama = ValidasiInput.inputTeks("Nama Pembooking: ");
-                    String noTelepon = ValidasiInput.inputTeks("No HP: ");
-                    Customer customer = new Customer(nama, noTelepon);
+                    String noHp = ValidasiInput.inputTeks("No HP: ");
+                    Customer customer = new Customer(nama, noHp);
 
                     System.out.println("\n--- JADWAL SESI ---");
                     String tanggal = ValidasiInput.inputTeks("Tanggal (YYYY-MM-DD): ");
@@ -114,7 +114,7 @@ public class Main {
                     bookingBaru.tampilkanInvoice();
                 }
                 case 2 -> bookingService.tampilkanInfoBooking();
-                case 3 -> System.out.println("Program selesai.");
+                case 3 -> System.out.println("Terimakasih sudah menggunakan sistem ini!.");
                 default -> System.out.println("Pilihan menu tidak valid!");
             }
         } while (pilihan != 3);

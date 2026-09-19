@@ -32,7 +32,7 @@ public class BookingService {
         System.out.println("\n================ DAFTAR BOOKING STUDIO ==================");
         for (Booking b : daftarBooking) {
             System.out.println("ID Booking  : " + b.getIdBooking());
-            System.out.println("Pembooking  : " + b.getCustomer().getNama() + " (" + b.getCustomer().getNoTelepon() + ")");
+            System.out.println("Pembooking  : " + b.getCustomer().getNama() + " (" + b.getCustomer().getNoHp() + ")");
             System.out.println("Jadwal Sesi : " + b.getJadwal().getInfoJadwal());
             System.out.println("Paket Foto  : " + b.getPaketFoto().getNamaPaket());
             System.out.println("Total Bayar : Rp" + b.getTotalBayar());

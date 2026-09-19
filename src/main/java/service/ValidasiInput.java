@@ -7,6 +7,8 @@ package service;
 import java.util.Scanner;
 
 public class ValidasiInput {
+    
+    //Validasi Input Int
     public static int inputAngka(String pesan) {
         Scanner scanner = new Scanner(System.in);
         System.out.print(pesan);
@@ -18,7 +20,8 @@ public class ValidasiInput {
         int hasil = scanner.nextInt();
         return hasil;
     }
-
+    
+    //Validasi Input String
     public static String inputTeks(String pesan) {
         Scanner scanner = new Scanner(System.in);
         System.out.print(pesan);
@@ -31,6 +34,7 @@ public class ValidasiInput {
         return input;
     }
     
+    //Validasi Input ID Unik
     public static String inputIdUnik(String pesan, BookingService service) {
     String id = "";
     boolean sudahAda = false;

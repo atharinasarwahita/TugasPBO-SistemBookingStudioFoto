@@ -6,18 +6,18 @@ package models;
 
 public class Customer {
     private String nama;
-    private String noTelepon;
+    private String noHp;
 
-    public Customer(String nama, String noTelepon) {
+    public Customer(String nama, String noHp) {
         this.nama = nama;
-        this.noTelepon = noTelepon;
+        this.noHp = noHp;
     }
     
     public String getNama(){ 
         return nama; 
     }
     
-    public String getNoTelepon(){
-        return noTelepon; 
+    public String getNoHp(){
+        return noHp; 
     }
 }

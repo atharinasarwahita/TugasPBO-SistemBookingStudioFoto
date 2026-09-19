@@ -43,7 +43,7 @@ public class Booking {
     System.out.println("==========================================");
     System.out.println("ID Booking     : " + idBooking);
     System.out.println("Nama Pembooking: " + customer.getNama());
-    System.out.println("No HP          : " + customer.getNoTelepon());
+    System.out.println("No HP          : " + customer.getNoHp());
     System.out.println("Jadwal Sesi    : " + jadwal.getTanggal() + " | Jam: " + jadwal.getJam());
     System.out.println("------------------------------------------");
     System.out.println("Paket Foto     : " + paketFoto.getNamaPaket());

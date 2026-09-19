@@ -31,6 +31,6 @@ public class PaketFoto {
     }
     
     public void tampilkanRincian() {
-
+        System.out.println("Biaya Ekstra : Rp0");
     }
 }

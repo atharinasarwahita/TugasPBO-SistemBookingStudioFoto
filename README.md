@@ -50,7 +50,7 @@ Dalam sistem ini, kelas `PaketFoto` bertindak sebagai superclass yang menyimpan 
 
 Kelas `PaketStudio` dan `PaketOutdoor` bertindak sebagai subclass yang diturunkan menggunakan kata kunci extends:
 
-- Kelas Induk (`PaketFoto`)
+- Class Induk (`PaketFoto`)
 
   Kelas `PaketFoto` menampung atribut umum yang dimiliki oleh seluruh jenis paket foto, yaitu `namaPaket` dan `harga`, serta method dasar `hitungTotalHarga()`.
 
@@ -67,7 +67,7 @@ Kelas `PaketStudio` dan `PaketOutdoor` bertindak sebagai subclass yang diturunka
 
   Penggunaan `super(namaPaket, harga)` meneruskan nilai nama paket dan harga dasar ke konstruktor kelas induk (`PaketFoto`), sehingga tidak perlu membuat ulang variabel pencatat harga di kelas anak.
 
-  - Subclass 2 (`PaketOutdoor`)
+- Subclass 2 (`PaketOutdoor`)
 
   Sama halnya dengan `PaketStudio`, kelas `PaketOutdoor` juga menurunkan kelas `PaketFoto`. Perbedaannya terletak pada variabel spesifik `biayaLokasi` serta kalkulasi total harganya.
 

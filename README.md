@@ -50,14 +50,29 @@ Dalam sistem ini, kelas `PaketFoto` bertindak sebagai superclass yang menyimpan 
 
 Kelas `PaketStudio` dan `PaketOutdoor` bertindak sebagai subclass yang diturunkan menggunakan kata kunci extends:
 
-- `PaketStudio extends PaketFoto`: Mewarisi atribut dasar `PaketFoto`, namun menambahkan variabel spesifik `kapasitasOrang` serta mengubah logika method `hitungTotalHarga()` untuk mengalkulasi biaya ekstra jika kapasitas melebihi 5 orang.
+- Kelas Induk (`PaketFoto`)
 
-  <img width="599" height="129" alt="image" src="https://github.com/user-attachments/assets/c5cd057f-0660-48d0-ac7b-59f94033557c" />
+  Kelas `PaketFoto` menampung atribut umum yang dimiliki oleh seluruh jenis paket foto, yaitu `namaPaket` dan `harga`, serta method dasar `hitungTotalHarga()`.
+
+  <img width="600" alt="image" src="https://github.com/user-attachments/assets/7985c92e-56b0-4c15-83b6-9c9b7d1effb4" />
+
+  Penggunaan akses modifier protected memungkinkan atribut namaPaket dan harga diakses langsung oleh kelas anak tanpa perlu re-deklarasi.
 
 
-- `PaketOutdoor extends PaketFoto`: Mewarisi atribut dasar `PaketFoto`, namun menambahkan variabel spesifik `biayaLokasi` serta mengubah logika method `hitungTotalHarga()` untuk menambahkan biaya izin lokasi ke total harga dasar.
+- Subclass 1 (`PaketStudio`)
+  
+  Kelas `PaketStudio` mewarisi properti dari `PaketFoto` menggunakan kata kunci `extends`. Kelas ini menambahkan variabel khusus `kapasitasOrang` dan melakukan method overriding pada `hitungTotalHarga()` untuk menghitung biaya tambahan jika kapasitas melebihi batas standar (5 orang)
 
-  <img width="590" height="135" alt="image" src="https://github.com/user-attachments/assets/b13d6015-6856-4b43-81cc-e3e21610a927" />
+  <img width="600" alt="image" src="https://github.com/user-attachments/assets/6da00810-206e-4e57-a1b0-55c4894b1ff1" />
+
+  Penggunaan `super(namaPaket, harga)` meneruskan nilai nama paket dan harga dasar ke konstruktor kelas induk (`PaketFoto`), sehingga tidak perlu membuat ulang variabel pencatat harga di kelas anak.
+
+  - Subclass 2 (`PaketOutdoor`)
+
+  Sama halnya dengan `PaketStudio`, kelas `PaketOutdoor` juga menurunkan kelas `PaketFoto`. Perbedaannya terletak pada variabel spesifik `biayaLokasi` serta kalkulasi total harganya.
+
+  <img width="600" alt="image" src="https://github.com/user-attachments/assets/cc4a40ec-48f3-4adf-85ef-1a6992ada579" />
+
 
 Melalui struktur inheritance ini, variabel umum seperti namaPaket dan harga tidak perlu ditulis ulang di tiap subclass, sehingga kode jadi lebih bersih, terstruktur, dan terhindar dari duplikasi.  
 
